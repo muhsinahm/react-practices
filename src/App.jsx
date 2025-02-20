@@ -1,10 +1,12 @@
 import "./App.css";
-import Dropdown from "./components/Dropdown/Dropdown";
+import Checklist from "./components/Checklist/Checklist";
+// import Dropdown from "./components/Dropdown/Dropdown";
 
 function App() {
   return (
     <div>
-      <Dropdown />
+      <Checklist />
+      {/* <Dropdown /> */}
     </div>
   );
 }

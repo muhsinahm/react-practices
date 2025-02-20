@@ -1,5 +1,5 @@
 import { useState } from "react";
-import countries from "../../Data/Data";
+import countries from "../../Data/countries";
 
 const Dropdown = () => {
   const [country, setCounty] = useState("");
@@ -13,7 +13,7 @@ const Dropdown = () => {
     <div>
       <select value={country} onChange={onOptionChange}>
         <option value="">Select a country</option>
-        {countries.map((data, index) => {
+        {countries?.map((data, index) => {
           return (
             <option key={index} value={index}>
               {data?.name}
